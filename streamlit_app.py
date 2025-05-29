@@ -1,6 +1,9 @@
 import streamlit as st
-
-st.title("🎈 My new app")
+import pandas as pd
+st.title("Student Ranking System")
+rank_table = pd.DataFrame((200,10),
+                         columns = ["Name","English","Hindi","Telugu","Maths","Science","Total Marks","Percentage","Rank"]
+                         )
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    rank_table
 )
