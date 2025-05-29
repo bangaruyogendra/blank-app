@@ -5,7 +5,6 @@ st.title("Student Ranking System")
 rank_table = pd.DataFrame(
                          columns = ("Name","English","Hindi","Telugu","Maths","Science","Total Marks","Percentage","Rank")
                          )
-
 def ranked(percent):
   if(percent>=90):
     st.success("You got A+ Grade")
